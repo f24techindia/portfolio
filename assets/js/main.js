@@ -208,8 +208,8 @@ function showCookieSettings() {
 }
 
 // Newsletter subscription
-function subscribeNewsletter() {
-    const emailInput = document.getElementById('newsletter-email');
+function subscribeNewsletter(inputId = 'newsletter-email') {
+    const emailInput = document.getElementById(inputId);
     const email = emailInput.value.trim();
 
     if (!email) {
@@ -310,79 +310,6 @@ function filterPortfolio(category) {
     });
 }
 
-// Blog search functionality
-function searchBlog() {
-    const searchInput = document.getElementById('blog-search');
-    const searchTerm = searchInput.value.toLowerCase();
-    const blogPosts = document.querySelectorAll('.blog-post');
-
-    blogPosts.forEach(post => {
-        const title = post.querySelector('.blog-title').textContent.toLowerCase();
-        const excerpt = post.querySelector('.blog-excerpt').textContent.toLowerCase();
-        
-        if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
-            post.style.display = 'block';
-        } else {
-            post.style.display = 'none';
-        }
-    });
-}
-
-// FAQ accordion functionality
-function toggleFAQ(element) {
-    const content = element.nextElementSibling;
-    const icon = element.querySelector('.faq-icon');
-
-    if (content.style.display === 'block') {
-        content.style.display = 'none';
-        icon.style.transform = 'rotate(0deg)';
-    } else {
-        // Close all other FAQs
-        document.querySelectorAll('.faq-content').forEach(faq => {
-            faq.style.display = 'none';
-        });
-        document.querySelectorAll('.faq-icon').forEach(icon => {
-            icon.style.transform = 'rotate(0deg)';
-        });
-
-        // Open clicked FAQ
-        content.style.display = 'block';
-        icon.style.transform = 'rotate(180deg)';
-    }
-}
-
-// Testimonial carousel
-let currentTestimonial = 0;
-function showTestimonial(index) {
-    const testimonials = document.querySelectorAll('.testimonial-item');
-    const dots = document.querySelectorAll('.testimonial-dot');
-
-    testimonials.forEach((testimonial, i) => {
-        testimonial.style.display = i === index ? 'block' : 'none';
-    });
-
-    dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === index);
-    });
-
-    currentTestimonial = index;
-}
-
-function nextTestimonial() {
-    const testimonials = document.querySelectorAll('.testimonial-item');
-    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-    showTestimonial(currentTestimonial);
-}
-
-function prevTestimonial() {
-    const testimonials = document.querySelectorAll('.testimonial-item');
-    currentTestimonial = currentTestimonial === 0 ? testimonials.length - 1 : currentTestimonial - 1;
-    showTestimonial(currentTestimonial);
-}
-
-// Auto-rotate testimonials
-setInterval(nextTestimonial, 5000);
-
 // Form validation helpers
 function validateForm(formId) {
     const form = document.getElementById(formId);
@@ -464,27 +391,6 @@ function showSuccess(message) {
         successDiv.remove();
     }, 5000);
 }
-
-// Lazy loading for images
-function initializeLazyLoading() {
-    const images = document.querySelectorAll('img[data-src]');
-    
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                observer.unobserve(img);
-            }
-        });
-    });
-
-    images.forEach(img => imageObserver.observe(img));
-}
-
-// Initialize lazy loading when DOM is ready
-document.addEventListener('DOMContentLoaded', initializeLazyLoading);
 
 // Performance monitoring
 function trackPerformance() {

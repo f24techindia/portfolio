@@ -46,12 +46,12 @@
             <div>
                 <h3 class="text-lg font-semibold mb-6">Services</h3>
                 <ul class="space-y-3">
-                    <li><a href="?page=services&service=custom-software" class="text-gray-300 hover:text-white transition-colors">Custom Software Development</a></li>
-                    <li><a href="?page=services&service=mobile-app" class="text-gray-300 hover:text-white transition-colors">Mobile App Development</a></li>
-                    <li><a href="?page=services&service=cloud-solutions" class="text-gray-300 hover:text-white transition-colors">Cloud Solutions</a></li>
-                    <li><a href="?page=services&service=data-analytics" class="text-gray-300 hover:text-white transition-colors">Data Analytics</a></li>
-                    <li><a href="?page=services&service=cybersecurity" class="text-gray-300 hover:text-white transition-colors">Cybersecurity</a></li>
-                    <li><a href="?page=services&service=ui-ux-design" class="text-gray-300 hover:text-white transition-colors">UI/UX Design</a></li>
+                    <li><a href="?page=services" class="text-gray-300 hover:text-white transition-colors">Custom Software Development</a></li>
+                    <li><a href="?page=services" class="text-gray-300 hover:text-white transition-colors">Mobile App Development</a></li>
+                    <li><a href="?page=services" class="text-gray-300 hover:text-white transition-colors">Cloud Solutions</a></li>
+                    <li><a href="?page=services" class="text-gray-300 hover:text-white transition-colors">Data Analytics</a></li>
+                    <li><a href="?page=services" class="text-gray-300 hover:text-white transition-colors">Cybersecurity</a></li>
+                    <li><a href="?page=services" class="text-gray-300 hover:text-white transition-colors">UI/UX Design</a></li>
                 </ul>
             </div>
 

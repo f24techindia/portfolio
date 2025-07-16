@@ -92,7 +92,7 @@
                         <?php endforeach; ?>
                     </ul>
                     
-                    <a href="?page=services&service=<?php echo strtolower(str_replace([' ', '/'], ['-', '-'], $service['title'])); ?>" class="flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group">
+                    <a href="?page=contact" class="flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group">
                         Learn More
                         <svg class="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>

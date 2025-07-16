@@ -154,54 +154,14 @@
                         </div>
                     </div>
 
-                    <!-- Quick Contact Options -->
-                    <div class="bg-blue-50 rounded-xl p-6 mb-8">
-                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Quick Contact</h4>
-                        <div class="space-y-3">
-                            <a href="mailto:sales@f24tech.com?subject=Quick Inquiry" class="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
-                                <svg class="h-4 w-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
-                                Email us directly
-                            </a>
-                            <a href="tel:+15551234567" class="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
-                                <svg class="h-4 w-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                </svg>
-                                Call us now
-                            </a>
-                        </div>
-                    </div>
-
                     <!-- CTA Box -->
                     <div class="rounded-2xl p-6 text-white" style="background: linear-gradient(to right, #2563eb, #16a34a)">
                         <h4 class="text-xl font-bold mb-2">Ready to get started?</h4>
                         <p class="mb-4 opacity-90">Schedule a free consultation to discuss your project.</p>
-                        <a href="mailto:sales@f24tech.com?subject=Free Consultation Request&body=Hi, I'd like to schedule a free consultation to discuss my project." class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                        <a href="mailto:sales@f24tech.com?subject=Free Consultation Request" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
                             Book a Call
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Frequently Asked Questions</h2>
-            <div class="space-y-8">
-                <div class="bg-white rounded-xl p-6">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-3">How quickly can you start my project?</h3>
-                    <p class="text-gray-600">We typically can start new projects within 1-2 weeks after the initial consultation and contract signing. For urgent projects, we may be able to accommodate faster timelines.</p>
-                </div>
-                <div class="bg-white rounded-xl p-6">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Do you provide ongoing support after project completion?</h3>
-                    <p class="text-gray-600">Yes, we offer comprehensive support and maintenance packages to ensure your solution continues to perform optimally. We also provide training for your team.</p>
-                </div>
-                <div class="bg-white rounded-xl p-6">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-3">What is your development process?</h3>
-                    <p class="text-gray-600">We follow an agile development methodology with regular check-ins, demos, and feedback sessions. This ensures transparency and allows for adjustments throughout the project.</p>
                 </div>
             </div>
         </div>

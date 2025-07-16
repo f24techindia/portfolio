@@ -50,24 +50,5 @@ try {
     exit;
 }
 
-// Send welcome email (optional)
-$to = $email;
-$subject = 'Welcome to F24Tech Newsletter';
-$message = "
-Thank you for subscribing to our newsletter!
-
-You'll receive the latest tech insights, company updates, and industry news directly in your inbox.
-
-Best regards,
-The F24Tech Team
-";
-
-$headers = "From: newsletter@f24tech.com\r\n";
-$headers .= "Reply-To: sales@f24tech.com\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-// Uncomment to send welcome email
-// mail($to, $subject, $message, $headers);
-
 echo json_encode(['success' => true, 'message' => 'Successfully subscribed to newsletter!']);
 ?>
